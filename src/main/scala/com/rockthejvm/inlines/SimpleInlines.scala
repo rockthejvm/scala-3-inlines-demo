@@ -8,7 +8,8 @@ object SimpleInlines {
   inline def inc(x: Int): Int = x + 1
 
   val aNumber = 3
-  val four = inc(aNumber) // reduces to aNumber + 1 at COMPILE TIME
+  val four = increment(aNumber)
+  val four_v2 = inc(aNumber) // reduces to aNumber + 1 at COMPILE TIME 
 
   val eight = inc(2 * aNumber + 1)
   /* 
